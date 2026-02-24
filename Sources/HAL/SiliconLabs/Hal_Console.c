@@ -35,17 +35,15 @@ SOFTWARE.
 /***************************************************************************//**
  * Private defines
  ******************************************************************************/
-// //Define used hardware for console output
-// #define HAL_CONSOLE_USART               USART0
-// #define HAL_CONSOLE_USART_ID            0
-// #define HAL_CONSOLE_RX_IRQ              USART0_RX_IRQn
-// #define HAL_CONSOLE_USART_CLOCK         cmuClock_USART0
+//Define used hardware for console output
+//The file expect HAL_CONSOLE_USART_TX_PORT and HAL_CONSOLE_USART_TX_PIN to be defined
+//The file expect HAL_CONSOLE_USART_RX_PORT and HAL_CONSOLE_USART_RX_PIN to be defined
 
-// // USART0 TX on PB01
+// // USART0 TX
 // #define HAL_CONSOLE_USART_TX_PORT       gpioPortB
 // #define HAL_CONSOLE_USART_TX_PIN        1
 
-// // USART0 RX on PB00
+// // USART0 RX
 // #define HAL_CONSOLE_USART_RX_PORT       gpioPortB
 // #define HAL_CONSOLE_USART_RX_PIN        0
 
@@ -68,16 +66,6 @@ SOFTWARE.
 /***************************************************************************//**
  * Global functions
  ******************************************************************************/
-
-//Define used hardware for console output
-
-// USART0 TX on PB01
-#define HAL_CONSOLE_USART_TX_PORT       gpioPortB
-#define HAL_CONSOLE_USART_TX_PIN        1
-
-// USART0 RX on PB00
-#define HAL_CONSOLE_USART_RX_PORT       gpioPortB
-#define HAL_CONSOLE_USART_RX_PIN        0
 
 /***************************************************************************//**
  * Initialize uart

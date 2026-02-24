@@ -147,6 +147,14 @@ static void console_process_rx_json( uint8_t * json, uint8_t len )
                     }
                 }
                 break;
+#if defined(SUPPORT_REBOOT_IN_BOOTLOADER) && (SUPPORT_REBOOT_IN_BOOTLOADER == 1)
+                // Reboot in bootloader
+            case 'B':
+                {
+                    BSP_RebootInBootloader();
+                }
+                break;
+#endif  // SUPPORT_REBOOT_IN_BOOTLOADER
             default:
                 break;
             }

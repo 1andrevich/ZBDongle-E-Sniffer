@@ -20,6 +20,23 @@
             "svdFile": "${workspaceRoot}/Sources/HAL/EFR32MG21/SVD/EFR32MG21A020F768IM32.svd",
             "showDevDebugOutput": "raw",
             "postLaunchCommands": ["set output-radix 16"],
+        },
+        {
+            "name": "SMLIGHT SLZB-07",
+            "request": "launch",
+            "type": "cortex-debug",
+            "cwd": "${workspaceRoot}",
+            "executable": "${workspaceRoot}/Output/Sniffer_802.15.4_SMLIGHT_SLZB_07/Sniffer_802.15.4_SMLIGHT_SLZB_07.elf",
+            "servertype": "jlink",
+            "serverpath": "JLinkGDBServerCLExe",
+            "device": "EFR32MG21AxxxF768",
+            "interface": "swd",
+            "ipAddress": "192.168.0.7",
+            "armToolchainPath": "/home/dev/gcc-arm-none-eabi-10.3-2021.10/bin",
+            "runToEntryPoint": "main",
+            "svdFile": "${workspaceRoot}/Sources/HAL/EFR32MG21/SVD/EFR32MG21A020F768IM32.svd",
+            "showDevDebugOutput": "raw",
+            "postLaunchCommands": ["set output-radix 16"],
         }
     ]
 }

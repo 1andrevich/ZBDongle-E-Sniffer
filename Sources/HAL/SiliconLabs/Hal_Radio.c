@@ -230,7 +230,6 @@ HAL_Radio_GetRxPacket_Result_t  HAL_Radio_GetRxPacket( PhyRx_t * phy_rx )
             phy_rx->channel = MainChannel;
             packet_received = true;
             // //RAIL_GetChannel() //to retreive channel
-            // MAC_ProcessPhyRx( &phy_rx );
         }
         RAIL_ReleaseRxPacket(gRailHandle, mainPacketHandle);
         mainPacketHandle = RAIL_GetRxPacketInfo(gRailHandle, RAIL_RX_PACKET_HANDLE_OLDEST_COMPLETE, &packetInfo);
