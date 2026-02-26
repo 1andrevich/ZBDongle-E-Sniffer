@@ -68,8 +68,8 @@ https://darkxst.github.io/silabs-firmware-builder/<br>
 The SMLIGHT SLZB-07 can be flashed with
 https://darkxst.github.io/silabs-firmware-builder/
 Please note that once the SMLIGHT SLZB-07 is flashed with the sniffer software, it cannot be reflashed using the above tools unless manually entering the bootloader.
-To manually enter bootloader send JSON payload {"B"} to the device using the a terminal at 1Mbs (if successfull the red led will turn-off)
-Alternatively a jumper can be intalled between FLSH and GND pads before plugging the dongle in a USB port. The jumper must be removed once the device in reflashed.
+To manually enter bootloader send JSON payload {"B"} to the device using a serial terminal at 1Mbs (if successfull the red led will turn-off)
+Alternatively a jumper can be intalled between FLSH and GND pads before plugging the dongle in a USB port. The jumper must be removed once the device is reflashed.
 
 <!-- Removed because did not work... obtained a "No matching gpiochip device found" Alternatively, the Universal Silicon Labs Flasher can also be used to reflash a SLZB-07, universal Silicon Labs Flasher can be found at https://github.com/NabuCasa/universal-silabs-flasher:
 Typical command to reflash:
